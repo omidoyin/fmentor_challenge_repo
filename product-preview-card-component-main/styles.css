@@ -16,7 +16,7 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0;
-  background-color: hsl(30, 38%, 92%) ;
+  background-color: hsl(30, 38%, 92%);
 }
 
 .container {
@@ -31,11 +31,11 @@ body {
   min-height: 40rem;
   margin-bottom: 2rem;
   overflow: hidden;
-  
-  background-color: hsl(0, 0%, 100%) ;
+
+  background-color: hsl(0, 0%, 100%);
 }
 .left {
-  background-image: url("/images/image-product-desktop.jpg");
+  background-image: url("images/image-product-desktop.jpg");
   width: clamp(30rem, 80vw, 50%);
   background-size: cover;
   background-repeat: no-repeat;
@@ -141,13 +141,12 @@ body {
     font-size: clamp(1rem, 2vw, 1.5rem);
   }
   .attribution {
-    font-size: clamp(.5rem, 2.5vw, 2.5rem);
+    font-size: clamp(0.5rem, 2.5vw, 2.5rem);
     /* width: 90%; */
     /* text-align: center;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column; */
-
   }
 }
