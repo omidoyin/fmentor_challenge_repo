@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(30, 38%, 92%) ;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  width: clamp(40rem, 90vw, 60rem);
+  border-radius: 10px;
+  min-height: 40rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  
+  background-color: hsl(0, 0%, 100%) ;
+}
+.left {
+  background-image: url("/images/image-product-desktop.jpg");
+  width: clamp(30rem, 80vw, 50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.right {
+  width: clamp(20rem, 50vw, 50%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.right button {
+  padding: 1.5rem 0rem;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+}
+.right button:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+.right p:first-of-type {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+}
+.right h2:first-of-type {
+  color: hsl(212, 21%, 14%);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: bolder;
+  font-family: "Fraunces", serif;
+}
+
+.right p:nth-of-type(2) {
+  color: hsl(228, 12%, 48%);
+  line-height: 2;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+}
+.right h2:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  color: hsl(158, 36%, 37%);
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+.right h2:nth-of-type(2) span {
+  color: hsl(228, 12%, 48%);
+  margin-left: 1rem;
+  font-size: clamp(0.5rem, 2vw, 1rem);
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 650px) {
+  .flex-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+  .left {
+    background-image: url("/images/image-product-mobile.jpg");
+    width: 100%;
+    min-height: 16rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .right {
+    margin-top: 1rem;
+    width: 90%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .right button {
+    padding: 0.5rem 0rem;
+    border-radius: 12px;
+  }
+  .right p:first-of-type {
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    margin-bottom: 0.7rem;
+  }
+  .right h2:first-of-type {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1;
+    margin-bottom: 0.7rem;
+  }
+
+  .right p:nth-of-type(2) {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin-bottom: 0.7rem;
+  }
+
+  .right h2:nth-of-type(2) {
+    font-size: clamp(2rem, 2vw, 2.5rem);
+    margin-bottom: 0.7rem;
+  }
+  .right h2:nth-of-type(2) span {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+  .attribution {
+    font-size: clamp(.5rem, 2.5vw, 2.5rem);
+    /* width: 90%; */
+    /* text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; */
+
+  }
+}
