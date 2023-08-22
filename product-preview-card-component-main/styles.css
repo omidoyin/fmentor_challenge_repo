@@ -35,7 +35,7 @@ body {
   background-color: hsl(0, 0%, 100%);
 }
 .left {
-  background-image: url("images/image-product-desktop.jpg");
+  background-image: url("./images/image-product-desktop.jpg");
   width: clamp(30rem, 80vw, 50%);
   background-size: cover;
   background-repeat: no-repeat;
